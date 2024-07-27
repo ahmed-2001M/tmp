@@ -1,3 +1,5 @@
+
+
 import json
 import pandas as pd
 import streamlit as st
@@ -6,7 +8,7 @@ import matplotlib.pyplot as plt
 from io import BytesIO
 
 # Function to load loss data from a JSON file
-def load_loss_data_from_file(filename='placement_loss_data2.json'):
+def load_loss_data_from_file(filename='placement_loss_data.json'):
     current_path = os.getcwd()
     with open(os.path.join(current_path, filename), 'r') as f:
         return json.load(f)
